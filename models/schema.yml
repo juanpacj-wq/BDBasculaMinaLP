@@ -1,0 +1,15 @@
+# models/schema.yml
+version: 2
+
+sources:
+  - name: minalp
+    database: dl_captura
+    schema: minalp
+    tables:
+      - name: v_facturacion
+        description: "Tabla normalizada de facturación creada por Airbyte"
+
+models:
+  - name: v_facturacion_mlp
+    description: "Datos de facturación Mina las palmeras renombrados para evitar conflictos"
+
